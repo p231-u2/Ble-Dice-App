@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BLE Dice Orientation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>🎲 BLE Dice Orientation</h2>
+
+<button id="connectBtn">Connect BLE</button>
+<button id="calibrateBtn">Reset / Calibrate</button>
+
+<p>Status: <span id="status">Disconnected</span></p>
+
+<div class="values">
+  <div>X: <span id="xVal">0</span></div>
+  <div>Y: <span id="yVal">0</span></div>
+  <div>Z: <span id="zVal">0</span></div>
+  <div>🌡 Temp: <span id="tempVal">--</span> °C</div>
+</div>
+
+<canvas id="threeCanvas"></canvas>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
